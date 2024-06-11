@@ -6,21 +6,27 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "start": "node node_modules/pm2/bin/pm2 start 'npm run dev' --name my-app --watch"
   },
   "dependencies": {
     "@chatscope/chat-ui-kit-react": "^1.10.1",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
     "@heroicons/react": "^2.1.1",
     "@iconscout/react-unicons": "^2.0.2",
     "@mui/icons-material": "^5.15.3",
     "aos": "^3.0.0-beta.6",
     "axios": "^1.6.5",
+    "daisyui": "^4.6.0",
     "dotenv": "^16.4.4",
     "flowbite-react": "^0.7.2",
     "html5-qrcode": "^2.3.8",
     "jsonwebtoken": "^9.0.2",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
+    "openai": "^4.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-datepicker": "^6.0.0",
